@@ -1,3 +1,9 @@
+{ ### TEstabelecimento - classe para obtenção de dados de empresas a partir do número do CNPJ na API cnpj.ws
+  ### Analista/Desenvolvedor: Hélio Oliveira
+  ### 26/05/2024
+  ##$ Delphi utilizado: Versão 10.3.3
+}
+
 unit Estabelecimento;
 
 interface
