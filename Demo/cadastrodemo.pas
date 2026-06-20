@@ -45,6 +45,7 @@ begin
   LRequisicao := TRequisicao.Create;
   LResult     := LRequisicao.GetDadosEmpresa(edtCNPJ.Text);
   try
+    Memo1.Lines.Clear;
     Memo1.Lines.Add(LResult.Format(4));
   finally
     FreeAndNil(LRequisicao);
