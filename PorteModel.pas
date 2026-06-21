@@ -1,10 +1,10 @@
-{ ### TNaturezaJuridica - classe para obtenção de dados de empresas a partir do número do CNPJ na API cnpj.ws
+{ ### TPorte - classe para obtenção de dados de empresas a partir do número do CNPJ na API cnpj.ws
   ### Analista/Desenvolvedor: Hélio Oliveira
   ### 20/06/20264
   ##$ Delphi utilizado: Versão 12 update 3
 }
 
-unit NaturezaJuridica;
+unit PorteModel;
 
 interface
 
@@ -12,7 +12,7 @@ uses
   System.Classes;
 
 type
-  TNaturezaJuridica = class
+  TPorteModel = class
   private
     Fid: string;
     Fdescricao: string;

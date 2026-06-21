@@ -121,6 +121,7 @@
         <DCC_UnitSearchPath>C:\Projetos\estabelecimento;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1033</VerInfo_Locale>
+        <DCC_MapFile>3</DCC_MapFile>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
@@ -142,18 +143,19 @@
             <Form>frmCadastroDemo</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="..\Porte.pas"/>
-        <DCCReference Include="..\NaturezaJuridica.pas"/>
-        <DCCReference Include="..\Simples.pas"/>
-        <DCCReference Include="..\AtividadePrincipal.pas"/>
-        <DCCReference Include="..\Pais.pas"/>
-        <DCCReference Include="..\Estado.pas"/>
-        <DCCReference Include="..\Cidade.pas"/>
-        <DCCReference Include="..\InscricaoEstadual.pas"/>
-        <DCCReference Include="..\Socio.pas"/>
-        <DCCReference Include="..\Empresa.pas"/>
-        <DCCReference Include="..\QualificacaoResponsavel.pas"/>
+        <DCCReference Include="..\PorteModel.pas"/>
+        <DCCReference Include="..\NaturezaJuridicaModel.pas"/>
+        <DCCReference Include="..\SimplesModel.pas"/>
+        <DCCReference Include="..\AtividadePrincipalModel.pas"/>
+        <DCCReference Include="..\PaisModel.pas"/>
+        <DCCReference Include="..\EstadoModel.pas"/>
+        <DCCReference Include="..\CidadeModel.pas"/>
+        <DCCReference Include="..\InscricaoEstadualModel.pas"/>
+        <DCCReference Include="..\SocioModel.pas"/>
+        <DCCReference Include="..\EmpresaModel.pas"/>
+        <DCCReference Include="..\QualificacaoResponsavelModel.pas"/>
         <DCCReference Include="..\Requisicao.pas"/>
+        <DCCReference Include="..\EstabelecimentoModel.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
@@ -185,6 +187,18 @@
                 <DeployFile LocalName="..\bin\Win32\Debug\estabelecimentodemo.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>estabelecimentodemo.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\bin\estabelecimentodemo.exe" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win64">
+                        <RemoteName>estabelecimentodemo.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\bin\estabelecimentodemo.rsm" Configuration="Debug" Class="DebugSymbols">
+                    <Platform Name="Win64">
+                        <RemoteName>estabelecimentodemo.rsm</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

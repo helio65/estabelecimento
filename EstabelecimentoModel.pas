@@ -4,18 +4,18 @@
   ##$ Delphi utilizado: Versão 10.3.3
 }
 
-unit Estabelecimento;
+unit EstabelecimentoModel;
 
 interface
 
 uses
   System.Classes, System.SysUtils, System.Generics.Collections, System.JSON,
   REST.Client, REST.Types, Rest.JSON, Vcl.Dialogs,
-  Porte, NaturezaJuridica, Simples, AtividadePrincipal, Pais, Estado, Cidade,
-  InscricaoEstadual;
+  PorteModel, NaturezaJuridicaModel, SimplesModel, AtividadePrincipalModel,
+  PaisModel, EstadoModel, CidadeModel, InscricaoEstadualModel;
 
 type
-  TEstabelecimento = class
+  TEstabelecimentoModel = class
   private
     Fcnpj: string;
     Fcnpj_raiz: string;
@@ -43,10 +43,10 @@ type
     Fsituacao_especial: string;
     Fdata_situacao_especial: string;
     Fatualizado_em: string;
-    Fatividade_principal: TAtividadePrincipal;
-    Fpais: TPais;
-    Festado: TEstado;
-    Fcidade: TCidade;
+    Fatividade_principal: TAtividadePrincipalModel;
+    Fpais: TPaisModel;
+    Festado: TEstadoModel;
+    Fcidade: TCidadeModel;
     Fmotivo_situacao_cadastral: string;
     Finscricoes_estaduais: TArray<TInscricaoEstadual>;
   public
@@ -78,25 +78,25 @@ type
     property situacao_especial: string read Fsituacao_especial write Fsituacao_especial;
     property data_situacao_especial: string read Fdata_situacao_especial write Fdata_situacao_especial;
     property atualizado_em: string read Fatualizado_em write Fatualizado_em;
-    property atividade_principal: TAtividadePrincipal read Fatividade_principal write Fatividade_principal;
-    property pais: TPais read Fpais write Fpais;
-    property estado: TEstado read Festado write Festado;
-    property cidade: TCidade read Fcidade write Fcidade;
+    property atividade_principal: TAtividadePrincipalModel read Fatividade_principal write Fatividade_principal;
+    property pais: TPaisModel read Fpais write Fpais;
+    property estado: TEstadoModel read Festado write Festado;
+    property cidade: TCidadeModel read Fcidade write Fcidade;
     property motivo_situacao_cadastral: string read Fmotivo_situacao_cadastral write Fmotivo_situacao_cadastral;
     property inscricoes_estaduais: TArray<TInscricaoEstadual> read Finscricoes_estaduais write Finscricoes_estaduais;
   end;
 
 implementation
 
-constructor TEstabelecimento.Create;
+constructor TEstabelecimentoModel.Create;
 begin
-  Fatividade_principal := TAtividadePrincipal.Create;
-  Fpais                := TPais.Create;
-  Festado              := TEstado.Create;
-  Fcidade              := TCidade.Create;
+  Fatividade_principal := TAtividadePrincipalModel.Create;
+  Fpais                := TPaisModel.Create;
+  Festado              := TEstadoModel.Create;
+  Fcidade              := TCidadeModel.Create;
 end;
 
-destructor TEstabelecimento.Destroy;
+destructor TEstabelecimentoModel.Destroy;
 var
   LAindex: Integer;
 begin

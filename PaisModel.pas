@@ -4,7 +4,7 @@
   ##$ Delphi utilizado: Versão 12 update 3
 }
 
-unit Pais;
+unit PaisModel;
 
 interface
 
@@ -12,7 +12,7 @@ uses
   System.Classes;
 
 type
-  TPais = class
+  TPaisModel = class
   private
     Fid: string;
     Fiso2: string;

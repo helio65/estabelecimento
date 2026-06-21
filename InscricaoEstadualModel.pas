@@ -4,7 +4,7 @@
   ##$ Delphi utilizado: Versão 12 update 3
 }
 
-unit InscricaoEstadual;
+unit InscricaoEstadualModel;
 
 interface
 

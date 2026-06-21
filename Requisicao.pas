@@ -10,7 +10,7 @@ interface
 
 uses
   System.Classes, System.JSON, System.SysUtils, REST.Client, REST.Types, Rest.JSON,
-  Empresa;
+  EmpresaModel;
 
 type
   TRequisicao = class
@@ -45,14 +45,14 @@ end;
 
 function TRequisicao.GetDadosEmpresa(Avalue: String): TJSONObject;
 var
-  LEmpresa : TEmpresa;
+  LEmpresa : TEmpresaModel;
 begin
   FRestClint.BaseURL := 'https://publica.cnpj.ws/cnpj/'+Avalue.Replace('.', '').Replace('/', '').Replace('-', '');
   FRestRequest.Execute;
   if FRestResponse.StatusCode = 200 then
   begin
     try
-      LEmpresa := TJson.JsonToObject<TEmpresa>(FRestResponse.JSONValue.ToString);
+      LEmpresa := TJson.JsonToObject<TEmpresaModel>(FRestResponse.JSONValue.ToString);
       Result   := TJson.ObjectToJsonObject(LEmpresa);
     finally
       FreeAndNil(LEmpresa);

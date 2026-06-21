@@ -4,7 +4,7 @@
   ##$ Delphi utilizado: Versão 12 update 3
 }
 
-unit Simples;
+unit SimplesModel;
 
 interface
 
@@ -12,7 +12,7 @@ uses
   System.Classes;
 
 type
-  TSimples = class
+  TSimplesModel = class
   private
     Fmei: string;
     Fsimples: string;

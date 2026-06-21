@@ -1,10 +1,10 @@
-{ ### TQualificacaoResponsavel - classe para obtenção de dados de empresas a partir do número do CNPJ na API cnpj.ws
+{ ### TNaturezaJuridica - classe para obtenção de dados de empresas a partir do número do CNPJ na API cnpj.ws
   ### Analista/Desenvolvedor: Hélio Oliveira
   ### 20/06/20264
   ##$ Delphi utilizado: Versão 12 update 3
 }
 
-unit QualificacaoResponsavel;
+unit NaturezaJuridicaModel;
 
 interface
 
@@ -12,7 +12,7 @@ uses
   System.Classes;
 
 type
-  TQualificacaoResponsavel = class
+  TNaturezaJuridicaModel = class
   private
     Fid: string;
     Fdescricao: string;

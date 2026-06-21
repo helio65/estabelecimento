@@ -4,7 +4,7 @@
   ##$ Delphi utilizado: Versão 12 update 3
 }
 
-unit AtividadePrincipal;
+unit AtividadePrincipalModel;
 
 interface
 
@@ -12,7 +12,7 @@ uses
   System.Classes;
 
 type
-  TAtividadePrincipal = class
+  TAtividadePrincipalModel = class
   private
     Fid: string;
     Fsecao: string;

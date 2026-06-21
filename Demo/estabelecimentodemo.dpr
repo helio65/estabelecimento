@@ -8,18 +8,19 @@ uses
   madListModules,
   Vcl.Forms,
   cadastrodemo in 'cadastrodemo.pas' {frmCadastroDemo},
-  Porte in '..\Porte.pas',
-  NaturezaJuridica in '..\NaturezaJuridica.pas',
-  Simples in '..\Simples.pas',
-  AtividadePrincipal in '..\AtividadePrincipal.pas',
-  Pais in '..\Pais.pas',
-  Estado in '..\Estado.pas',
-  Cidade in '..\Cidade.pas',
-  InscricaoEstadual in '..\InscricaoEstadual.pas',
-  Socio in '..\Socio.pas',
-  Empresa in '..\Empresa.pas',
-  QualificacaoResponsavel in '..\QualificacaoResponsavel.pas',
-  Requisicao in '..\Requisicao.pas';
+  PorteModel in '..\PorteModel.pas',
+  NaturezaJuridicaModel in '..\NaturezaJuridicaModel.pas',
+  SimplesModel in '..\SimplesModel.pas',
+  AtividadePrincipalModel in '..\AtividadePrincipalModel.pas',
+  PaisModel in '..\PaisModel.pas',
+  EstadoModel in '..\EstadoModel.pas',
+  CidadeModel in '..\CidadeModel.pas',
+  InscricaoEstadualModel in '..\InscricaoEstadualModel.pas',
+  SocioModel in '..\SocioModel.pas',
+  EmpresaModel in '..\EmpresaModel.pas',
+  QualificacaoResponsavelModel in '..\QualificacaoResponsavelModel.pas',
+  Requisicao in '..\Requisicao.pas',
+  EstabelecimentoModel in '..\EstabelecimentoModel.pas';
 
 {$R *.res}
 

@@ -4,7 +4,7 @@
   ##$ Delphi utilizado: Versão 12 update 3
 }
 
-unit Socio;
+unit SocioModel;
 
 interface
 
@@ -12,7 +12,7 @@ uses
   System.Classes;
 
 type
-  TSocio = class
+  TSocioModel = class
   private
     Fnome: string;
     Fqualificacao: string;
